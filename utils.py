@@ -1,6 +1,8 @@
 import sys
 import os
 import time
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
 import requests
 from dotenv import load_dotenv
