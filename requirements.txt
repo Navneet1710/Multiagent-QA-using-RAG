@@ -4,6 +4,7 @@ langgraph
 chromadb
 pysqlite3-binary
 sentence-transformers
+langchain_community
 streamlit
 requests
 python-dotenv
