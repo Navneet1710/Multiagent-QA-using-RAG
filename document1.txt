@@ -1,0 +1,31 @@
+# Smart Home Hub X1000 - Product Specifications
+
+The Smart Home Hub X1000 is our flagship home automation controller designed to integrate all your smart devices into one seamless ecosystem.
+
+## Technical Specifications
+- Processor: Quad-core ARM Cortex-A53, 1.4GHz
+- Memory: 2GB RAM
+- Storage: 16GB eMMC Flash
+- Connectivity: Wi-Fi 6 (802.11ax), Bluetooth 5.2, Zigbee 3.0, Z-Wave Plus, Thread
+- Ports: 2x USB 3.0, Ethernet (Gigabit), HDMI 2.0
+- Power: 5V DC, 2.5A
+- Dimensions: 4.5" x 4.5" x 1.0" (114mm x 114mm x 25mm)
+- Weight: 210g
+
+## Key Features
+- Universal compatibility with over 10,000 smart devices
+- Voice control integration with all major assistants (Alexa, Google Assistant, Siri)
+- Advanced automation routines with conditional logic
+- Energy monitoring and optimization
+- Secure local processing with end-to-end encryption
+- Remote access via dedicated mobile app (iOS and Android)
+- Weekly automatic security updates
+- Custom scene creation with timing and sensor triggers
+
+## System Requirements
+- High-speed internet connection (minimum 10 Mbps)
+- 2.4GHz and 5GHz Wi-Fi network
+- Mobile device running iOS 14+ or Android 10+
+
+## Warranty Information
+The Smart Home Hub X1000 comes with a standard 2-year limited warranty covering manufacturing defects. Extended warranty options are available through our Premium Care program.

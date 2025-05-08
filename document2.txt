@@ -1,0 +1,50 @@
+# Smart Home Hub X1000 - Frequently Asked Questions
+
+## General Questions
+
+### What is the Smart Home Hub X1000?
+The Smart Home Hub X1000 is a central controller for your smart home devices. It connects to your home network and allows you to manage all your compatible smart devices through a single interface.
+
+### How many devices can I connect to the X1000?
+The X1000 can theoretically support hundreds of devices simultaneously, though we recommend keeping the total under 200 devices for optimal performance. The actual limit depends on the types of devices and protocols used.
+
+### Does the X1000 work without internet?
+Yes, the X1000 can operate locally without internet for basic functionality. However, cloud-based features, voice assistant integration, and remote access require an internet connection.
+
+## Setup & Compatibility
+
+### How do I set up the Smart Home Hub X1000?
+Setup is simple - connect the hub to power, download our mobile app, and follow the in-app instructions. Most users complete setup within 10 minutes.
+
+### Which smart home devices work with the X1000?
+The X1000 is compatible with most major smart home brands and protocols including:
+- Philips Hue
+- Nest
+- Ecobee
+- Samsung SmartThings
+- Ring
+- LIFX
+- Sonos
+- Belkin WeMo
+- Yale
+- Schlage
+- And many more through Zigbee, Z-Wave, and Wi-Fi protocols
+
+### Can I use multiple X1000 hubs in one home?
+Yes, you can use multiple hubs to extend coverage in larger homes. The hubs will automatically synchronize with each other.
+
+## Troubleshooting
+
+### My X1000 is offline or unresponsive. What should I do?
+Try these steps:
+1. Check power and internet connections
+2. Restart the hub by unplugging it for 10 seconds
+3. Ensure your router is working properly
+4. Check if there's a system outage on our status page
+5. Reset the hub by pressing the reset button for 10 seconds (as a last resort)
+
+### How do I factory reset my X1000?
+Press and hold the reset button on the back of the device for 10 seconds until the LED flashes red. Note that this will erase all your settings and paired devices.
+
+### How often should I update the firmware?
+The X1000 automatically updates its firmware weekly during low-usage hours. You can manually check for updates in the app's Settings menu.
