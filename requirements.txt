@@ -2,6 +2,7 @@ langchain
 langchain-groq
 langgraph
 chromadb
+pysqlite3-binary
 sentence-transformers
 streamlit
 requests
