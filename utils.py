@@ -1,6 +1,7 @@
 import sys
 import os
 import time
+import tempfile
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
@@ -59,35 +60,23 @@ def chunk_documents(documents: List[Document], chunk_size=500, chunk_overlap=50)
 
 def index_documents(documents: List[Document]) -> Chroma:
     """Create vector store from documents."""
-    import os
-    import shutil
-
-    # Create a persistent directory for ChromaDB
-    persist_directory = os.path.join(os.getcwd(), "chroma_db")
-
-    # If the directory exists, remove it to start fresh
-    if os.path.exists(persist_directory):
-        print(f"Removing existing ChromaDB directory: {persist_directory}")
-        shutil.rmtree(persist_directory)
-
-    # Create the directory
-    os.makedirs(persist_directory, exist_ok=True)
-    print(f"Created ChromaDB directory: {persist_directory}")
-
-    # Initialize the embedding model
+    # Use in-memory vector store instead of persistent storage to avoid read-only filesystem issues
     embedding_model = SentenceTransformerEmbeddings()
-
-    # Create the vector store with the persistent directory
-    print(f"Creating new vector store with collection name 'rag_qa_docs'")
-    vectorstore = Chroma.from_documents(
-        documents=documents,
-        embedding=embedding_model,
-        collection_name="rag_qa_docs",
-        persist_directory=persist_directory
-    )
-
-    print(f"Vector store created successfully with {len(documents)} documents")
-    return vectorstore
+    
+    # Create a temporary directory that will be automatically cleaned up
+    with tempfile.TemporaryDirectory() as temp_dir:
+        print(f"Using temporary directory for ChromaDB: {temp_dir}")
+        
+        # Create the vector store with the temporary directory
+        vectorstore = Chroma.from_documents(
+            documents=documents,
+            embedding=embedding_model,
+            collection_name="rag_qa_docs",
+            persist_directory=temp_dir
+        )
+        
+        print(f"Vector store created successfully with {len(documents)} documents")
+        return vectorstore
 
 def retrieve_relevant_chunks(vectorstore: Chroma, query: str, k=3) -> List[Document]:
     """Retrieve the top-k most similar chunks to the query."""
